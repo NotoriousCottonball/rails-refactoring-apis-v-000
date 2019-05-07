@@ -11,7 +11,7 @@ class GithubRepo
     redirect_to "https://github.com/login/oauth/authorize?client_id=#{github_client]}&scope=repo"
   end
 
-   def logged_in?(token)
+  def logged_in?(token)
     !!token
   end
   
