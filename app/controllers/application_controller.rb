@@ -9,4 +9,6 @@ class ApplicationController < ActionController::Base
     def authenticate_user
      user = GithubRepo.new
      user.authenticate(ENV['GITHUB_CLIENT']) if user.logged_in?(session[:token])
+    end
+    
 end
